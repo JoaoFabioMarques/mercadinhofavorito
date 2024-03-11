@@ -67,13 +67,47 @@ export default function Home() {
         Ofertas do dia
       </h1>
       <br />
-      <div className="ml-8 w-64 flex flex-col items-center justify-center bg-green-800 text-white gap-2 rounded-md">
-        <img src="picanha.png" alt="Picanha bovina" className="w-48 h-48 p-2" />
-        <p>Picanha bovina</p>
-        <p>R$35,00/kg</p>
-        <button className="w-24 bg-white text-green-800 rounded mb-2">
-          Comprar
-        </button>
+      <div className="flex items-center justify-center">
+        <div className="ml-8 w-64 inline-flex flex-col items-center justify-center bg-green-800 text-white gap-2 rounded-md">
+          <img
+            src="picanha.png"
+            alt="Picanha bovina"
+            className="w-48 h-48 p-2"
+          />
+          <p>Picanha bovina</p>
+          <p>R$43,00/kg</p>
+          <button className="w-24 bg-white text-green-800 rounded mb-2">
+            Comprar
+          </button>
+        </div>
+        <div className="ml-8 w-64 inline-flex flex-col items-center justify-center bg-green-800 text-white gap-2 rounded-md">
+          <img
+            src="gorgonzola.jpeg"
+            alt="Queijo gorgonzola"
+            className="w-48 h-48 p-2"
+          />
+          <p>Queijo gorgonzola</p>
+          <p>R$19,00/un</p>
+          <button className="w-24 bg-white text-green-800 rounded mb-2">
+            Comprar
+          </button>
+        </div>
+        <div className="ml-8 w-64 inline-flex flex-col items-center justify-center bg-green-800 text-white gap-2 rounded-md">
+          <img src="maca.webp" alt="Maçã gala" className="w-48 h-48 p-2" />
+          <p>Maçã gala</p>
+          <p>R$13,00/kg</p>
+          <button className="w-24 bg-white text-green-800 rounded mb-2">
+            Comprar
+          </button>
+        </div>
+        <div className="ml-8 w-64 inline-flex flex-col items-center justify-center bg-green-800 text-white gap-2 rounded-md">
+          <img src="vinho.jpg" alt="Vinho tinto" className="w-48 h-48 p-2" />
+          <p>Vinho tinto</p>
+          <p>R$57,00/un</p>
+          <button className="w-24 bg-white text-green-800 rounded mb-2">
+            Comprar
+          </button>
+        </div>
       </div>
     </main>
   );
