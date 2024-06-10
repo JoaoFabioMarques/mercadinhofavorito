@@ -33,6 +33,9 @@ export default function Home() {
               className="w-6 h-6 mb-1 bg-white flex items-start justify-start"
             />
           </button>
+          <button className="border border-green-800 bg-green-800 rounded-full ml-28 mb-1 w-20 h-8 text-white">
+            Carrinho
+          </button>
         </form>
       </div>
 
@@ -107,6 +110,79 @@ export default function Home() {
           <button className="w-24 bg-white text-green-800 rounded mb-2">
             Comprar
           </button>
+        </div>
+      </div>
+      <h1 className="text-white mt-8 font-extrabold text-2xl bg-green-800 flex items-center justify-center w-full h-16">
+        Quem somos
+      </h1>
+      <div className="text-white mt-6 ml-2 font-extrabold text-xl bg-green-800 flex items-center justify-center w-full h-full">
+        <p>
+          O Mercadinho Favorito é um projeto para portfolio de uma página web de
+          um mercadinho fictício que possui integração com um sistema próprio de
+          pagamentos.
+        </p>
+        <img src="point-left.jpg" alt="pessoa apontando para a esquerda" />
+      </div>
+      <h1 className="text-white mt-8 font-extrabold text-2xl bg-green-800 flex items-center justify-center w-full h-16">
+        Nossa missão
+      </h1>
+      <div className="text-white mt-4 ml-1 font-extrabold text-xl bg-green-800 flex items-center justify-center w-full h-full">
+        <p>
+          Buscar o melhor atendimento e a melhor eficácia possíveis para melhor
+          atender o que nos move: o cliente.
+        </p>
+      </div>
+      <div className="text-white mt-4 ml-1 font-extrabold text-xl bg-green-800 flex items-center justify-center w-full h-full">
+        <p>Contato</p>
+      </div>
+
+      <div className="border border-green-800 bg-green-800 rounded mt-4 w-[628px] p-6 h-52 ml-[360px]">
+        <form action="" method="post" className="mt-2">
+          <input
+            type="text"
+            placeholder="Nome"
+            className="w-48 h-8 mr-6 text-green-800 border border-white rounded-sm"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            className="w-48 h-8 mr-6 text-green-800 border border-white rounded-sm"
+          />
+          <input
+            type="text"
+            placeholder="Telefone"
+            className="w-32 h-8 text-green-800 border border-white rounded-sm"
+          />
+          <textarea
+            name="textarea"
+            id=""
+            placeholder="Digite o conteúdo aqui"
+            className="w-64 h-24 mt-8 mb-32 ml-36 text-green-800 border border-white rounded-sm"
+          ></textarea>
+        </form>
+        <p className="text-green-800 flex items-center justify-center">
+          feito por João Fábio Marques
+        </p>
+        <p className="text-green-800 flex items-center justify-center">
+          Contato:
+        </p>
+        <br />
+        <div className="flex items-center justify-center gap-8">
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-f%C3%A1bio-marques-pinto-898116230/"
+            target="_blank"
+          >
+            {" "}
+            <img src="linkedin.png" alt="LinkedIn" className="w-16 h-16" />{" "}
+          </a>
+          <a href="mailto:jfmarques2468@gmail.com">
+            {" "}
+            <img src="gmail.png" alt="Gmail" className="w-16 h-16" />{" "}
+          </a>
+          <a href="tel:+5585998487588">
+            {" "}
+            <img src="whatsapp.png" alt="Whatsapp" className="w-16 h-16" />{" "}
+          </a>
         </div>
       </div>
     </main>
