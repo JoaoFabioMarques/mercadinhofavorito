@@ -1,10 +1,14 @@
+"use client"
+
 import Image from "next/image";
 import cart from "/public/shopping_cart.png";
 import { Kanit } from "next/font/google";
+import { useRouter } from 'next/navigation'
 
 const kanit = Kanit({ weight: "300", subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter()
   return (
     <main className={kanit.className}>
       <div className="h-20 flex flex-row text-green-800 bg-white gap-4">
@@ -33,7 +37,7 @@ export default function Home() {
               className="w-6 h-6 mb-1 bg-white flex items-start justify-start"
             />
           </button>
-          <button className="border border-green-800 bg-green-800 rounded-full ml-28 mb-1 w-20 h-8 text-white">
+          <button type="button" onClick={() => router.push('../carrinho')} className="border border-green-800 bg-green-800 rounded-full ml-28 mb-1 w-20 h-8 text-white">
             Carrinho
           </button>
         </form>
